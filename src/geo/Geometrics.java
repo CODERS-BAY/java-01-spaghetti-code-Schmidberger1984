@@ -25,36 +25,38 @@ public class Geometrics {
         System.out.println(squarePerimeter(21,33));
 
         System.out.println("Rectangle area");
-        System.out.println("x * y = " + x * y);
-        System.out.println("x1 * y1 = " + x1 * y1);
-        System.out.println("x2 * y2 = " + x2 * y2);
-        System.out.println("x3 * y3 = " + x3 * y3);
-
+        System.out.println(squarePerimeter(5,99));
+        
         System.out.println("Rectangle perimeter");
-        System.out.println("x + y = " + x + y);
-        System.out.println("x1 + y1 = " + x1 + y1);
-        System.out.println("x2 + y2 = " + x2 + y2);
-        System.out.println("x3 + y3 = " + x3 + y3);
+        System.out.println(rectangleArea(88,55));
+     
 
-        System.out.println("We can also calculate some volumes");
-        /*
-            z is our height
-            y is our radius
-         */
         System.out.println("Zone of a sphere");
         double v = (Math.PI * z * (3 * Math.pow(y, 2) + 3 * Math.pow(x, 2) + Math.pow(z, 2))) / 6;
-        System.out.println(v);
+        System.out.println(zoneOfaSphere(1.1,2.2,3.3));
 
         System.out.println("Sphere with cylinder");
-        System.out.println(Math.PI * Math.pow(z, 3) / 6);
+        System.out.println(sphereWithcylinder(3.3));
 
         System.out.println("Ungula");
-        System.out.println((double) (2 * x3 * z3) / 3);
+        System.out.println(Ungula(2.2,3.3));
     }
     public static int squareArea(int x) {
     	return x*x;
     }
     public static int squarePerimeter(int x, int y) {
-    	return x+y;
+    	return x*4;
+    }
+    public static int rectangleArea(int x, int y) {
+    	return x*y*2;
+    }
+    public static double zoneOfaSphere(double x, double y, double z) {
+    	return  (Math.PI * z * (3 * Math.pow(y, 2) + 3 * Math.pow(x, 2) + Math.pow(z, 2))) / 6;	
+    }
+    public static double sphereWithcylinder( double z) {
+    	return  Math.PI * Math.pow(z, 3) / 6;	
+    }
+    public static double Ungula( double x, double z) {
+    	return ( 2 * x * z) / 3;	
     }
 }
