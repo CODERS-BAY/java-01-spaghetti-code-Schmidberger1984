@@ -16,17 +16,13 @@ public class Geometrics {
     public static void main(String[] args) {
         // area ... Fläche
         System.out.println("Square area");
-        System.out.println("x * x = " + x * x);
-        System.out.println("x1 * x1 = " + x1 * x1);
-        System.out.println("x2 * x2 = " + x2 * x2);
-        System.out.println("y * y = " + y * y);
-
+        System.out.println(squareArea(23));
+        System.out.println(squareArea(21));
+        
         // perimeter ... Umfang
         System.out.println("Square perimeter");
-        System.out.println("4 * x = " + 4 * x);
-        System.out.println("4 * x1 = " + 4 * x1);
-        System.out.println("4 * x2 = " + 4 * x2);
-        System.out.println("4 * y = " + 4 * y);
+        System.out.println(squarePerimeter(23,22));
+        System.out.println(squarePerimeter(21,33));
 
         System.out.println("Rectangle area");
         System.out.println("x * y = " + x * y);
@@ -54,5 +50,11 @@ public class Geometrics {
 
         System.out.println("Ungula");
         System.out.println((double) (2 * x3 * z3) / 3);
+    }
+    public static int squareArea(int x) {
+    	return x*x;
+    }
+    public static int squarePerimeter(int x, int y) {
+    	return x+y;
     }
 }
