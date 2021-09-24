@@ -32,7 +32,6 @@ public class Geometrics {
      
 
         System.out.println("Zone of a sphere");
-        double v = (Math.PI * z * (3 * Math.pow(y, 2) + 3 * Math.pow(x, 2) + Math.pow(z, 2))) / 6;
         System.out.println(zoneOfaSphere(1.1,2.2,3.3));
 
         System.out.println("Sphere with cylinder");
